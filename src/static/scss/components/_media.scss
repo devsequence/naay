@@ -1,0 +1,246 @@
+@media screen and (max-width: 992px){
+  .items{
+    padding: 0 0 40px;
+  }
+  .header{
+    &-logo{
+      &__item{
+        overflow: hidden;
+        margin-right: 20px;
+        height: 50px;
+        &:nth-of-type(1){
+          width: 42px;
+        }
+        &:nth-of-type(2){
+          width: 36px;
+        }
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+  .hero{
+    &.hero-page{
+      .container {
+        padding: 33px 15px 30px;
+      }
+    }
+  }
+  .footer{
+    &-logo{
+      flex-direction: column;
+      img{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .item{
+    padding: 25px 15px 25px;
+    &-accordion{
+      &__text{
+        padding: 6px 15px 20px;
+      }
+    }
+    &-sort{
+      margin: 0 -15px;
+    }
+  }
+  .bread-crumbs {
+    .container{
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+    &-top{
+      .container{
+        flex-wrap: wrap;
+      }
+    }
+    &-item{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    &-social{
+      margin-bottom: 0;
+    }
+    &-title{
+      min-width: 260px;
+    }
+    &-link{
+      a{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .header{
+    &-nav{
+      ul {
+        padding: 100px 15px 0;
+      }
+      a{
+        font-size: 16px;
+      }
+    }
+    &-button{
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      position: absolute;
+      top: 460px;
+      left: 70px;
+    }
+    &.active{
+      .header-button{
+        z-index: 5;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .hero{
+    &-title{
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    &-subtitle{
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    &-bg{
+      img, picture{
+        object-position: left;
+      }
+    }
+    &.hero-page{
+      .container {
+        padding: 33px 15px 30px;
+      }
+    }
+  }
+  .item{
+    &-title{
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+    &-accordion{
+      &__title{
+        padding: 10px 30px 10px 15px;
+        font-size: 18px;
+        &:before, &:after{
+          top: 20px;
+          right: 10px;
+          width: 16px;
+          height: 2px;
+        }
+      }
+    }
+  }
+  .btn-radial{
+    font-size: 14px;
+    padding: 4px 9px 4px;
+  }
+  .service{
+    &-item{
+      width: calc(100% - 20px);
+      margin-bottom: 20px;
+      &:nth-of-type(3){
+        padding: 0;
+        .service-item__media{
+          height: auto;
+          position: relative;
+          a, img{
+            display: block;
+          }
+        }
+        .service-item__text{
+          display: none;
+        }
+        .service-item__link{
+          display: block;
+          margin-bottom: 20px;
+          .link-arrow{
+            color: $primary;
+            &:before{
+              background: $primary;
+            }
+            &:after{
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='9' viewBox='0 0 6 9' fill='none'%3E%3Cpath d='M0.28097 7.3208C-0.0923452 7.69411 -0.0923452 8.30167 0.28097 8.67498C0.654286 9.0483 1.26184 9.0483 1.63515 8.67498L5.13408 5.17606C5.50739 4.80274 5.50739 4.19519 5.13408 3.82188L1.63515 0.322956C1.26184 -0.0503602 0.654286 -0.0503602 0.28097 0.322956C-0.0923452 0.696271 -0.0923452 1.30382 0.28097 1.67714L3.1028 4.49897L0.28097 7.3208Z' fill='%23171233'/%3E%3C/svg%3E");
+            }
+          }
+        }
+        .service-item__title{
+          font-size: 20px;
+          color: $primary;
+          a, h2{
+            color: $primary;
+            font-size: 20px;
+          }
+        }
+      }
+      &__title{
+        font-size: 18px;
+        padding: 0;
+      }
+      &__link{
+        padding: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  .footer{
+    &-bottom {
+      .container{
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    &-copy{
+      margin-bottom: 10px;
+    }
+  }
+}
+@media screen and (max-width: 490px){
+  .footer{
+    &-top{
+      .container{
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    &-item{
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    &-social{
+      margin: 20px 0;
+    }
+    &-copy{
+      font-size: 14px;
+    }
+    &-info{
+      a{
+        font-size: 14px;
+      }
+    }
+  }
+  .header{
+    &-logo{
+      &__item{
+        margin-right: 10px;
+      }
+    }
+    &-search{
+      max-width: 129px
+    }
+  }
+}
