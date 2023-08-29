@@ -157,6 +157,20 @@
     }
   }
   .item{
+    &-link{
+      li{
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+          flex-direction: column;
+          align-items: flex-start;
+          display: flex;
+        }
+        .btn-secondary{
+          margin: 10px 0 0;
+        }
+      }
+    }
     &-title{
       font-size: 20px;
       margin-bottom: 14px;
@@ -242,6 +256,27 @@
       }
       &__link{
         padding: 0;
+      }
+      &__text{
+        padding: 0;
+      }
+    }
+    &.service-page {
+      .service-item{
+        &:nth-child(3) {
+          width: calc(100% - 20px);
+          margin-bottom: 20px;
+          .service-item__text{
+            display: block;
+            padding: 0;
+          }
+          .service-item__text{
+            padding: 0;
+          }
+          .service-item__link{
+            padding: 0;
+          }
+        }
       }
     }
   }

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+</head>
+
+<body class="home">
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+    <div class="page-content">
+		<section class="hero hero-page">
+			<div class="hero-bg">
+				<img src="../static/images/bg.png" alt="hero">
+			</div>
+			<div class="container">
+				<div class="hero-subtitle">Результати пошуку</div>
+				<div class="search-form__page">
+					<form action="#">
+						<label>
+							<input type="text" placeholder="Введіть, що Вас цікавить" class="input">
+						</label>
+						<select class="select">
+							<option selected disabled>Розділ</option>
+							<option value="val-1">Про Центр</option>
+							<option value="val-2">Наукова робота</option>
+							<option value="val-3">Історія адвокатури України</option>
+							<option value="val-4">Популяризаційна робота</option>
+							<option value="val-5">Методична робота</option>
+							<option value="val-6">Мистецькі проекти </option>
+						</select>
+						<button type="submit" class="btn-primary">Пошук</button>
+					</form>
+				</div>
+				<div class="search-total">Усі результати: <span>1204</span></div>
+				<div class="item-sort">
+					<span class="item-sort__title">Сортувати за:</span>
+					<ul class="item-sort__list">
+						<li><a href="#">датою</a></li>
+						<li><a href="#" class="active">релевантністю</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="search-result">
+			<div class="container">
+				<div class="item">
+					<div class="search-item">
+						<div class="search-item__title">1.Результат пошуку</div>
+						<div class="search-item__text">
+							КЗ освіти <strong>"Дніпровський ліцей інформаційних технологій при Дніпровському національному університеті імені Олеся Гончара"</strong> Дніпровської міськради	м.Дніпро
+						</div>
+					</div>
+					<div class="search-item">
+						<div class="search-item__title">2.Результат пошуку</div>
+						<div class="search-item__text">
+							Lorem ipsum dolor sit amet consectetur. Velit orci at aliquam venenatis sapien felis facilisi nibh. Risus orci eu duis quis tempor neque. Ridiculus amet phasellus tincidunt a nunc vitae ornare ullamcorper gravida.
+						</div>
+					</div>
+					<div class="search-item">
+						<div class="search-item__title">3.Результат пошуку</div>
+						<div class="search-item__text">
+							КЗ освіти <strong>"Дніпровський ліцей інформаційних технологій при Дніпровському національному університеті імені Олеся Гончара"</strong> Дніпровської міськради	м.Дніпро
+						</div>
+					</div>
+					<div class="search-item">
+						<div class="search-item__title">4.Результат пошуку</div>
+						<div class="search-item__text">
+							Lorem ipsum dolor sit amet consectetur. Velit orci at aliquam venenatis sapien felis facilisi nibh. Risus orci eu duis quis tempor neque. Ridiculus amet phasellus tincidunt a nunc vitae ornare ullamcorper gravida.
+						</div>
+					</div>
+					<div class="search-item">
+						<div class="search-item__title">5.Результат пошуку</div>
+						<div class="search-item__text">
+							Lorem ipsum dolor sit amet consectetur. Velit orci at aliquam venenatis sapien felis facilisi nibh. Risus orci eu duis quis tempor neque. Ridiculus amet phasellus tincidunt a nunc vitae ornare ullamcorper gravida.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+
+@@include('./includes/_scripts.html')
+</body>
+</html>
