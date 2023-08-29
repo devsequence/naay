@@ -9,6 +9,21 @@
   }
 }
 @media screen and (max-width: 992px){
+  .search-form__page{
+    label{
+      max-width: 50%;
+      margin-right: 0;
+      padding-right: 20px;
+    }
+    .select2{
+      max-width: 50%;
+      min-width: 50%;
+      margin-right: 0;
+    }
+    .btn-primary{
+      margin-top: 12px;
+    }
+  }
   .item-line {
     padding: 45px 0 45px 44px;
     &__item{
@@ -82,6 +97,20 @@
 }
 
 @media screen and (max-width: 768px){
+  .search-form__page{
+    label{
+      max-width: 100%;
+      padding-right: 0;
+      margin-bottom: 12px;
+    }
+    .select2{
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .btn-primary{
+      margin-top: 20px;
+    }
+  }
   .item-info {
     width: calc(50% - 28px);
   }
