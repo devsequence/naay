@@ -294,3 +294,37 @@ body{
     overflow: hidden;
   }
 }
+.not-found{
+  height: 100vh;
+  padding: 100px 0;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+  }
+  &__title{
+    font-family: $Montserrat;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(101deg, #AF6AEF 9.83%, #88C6FF 95.66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__text{
+    color:  #171233;
+    text-align: center;
+    font-family: $Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 26px;
+  }
+  &__link{}
+}
