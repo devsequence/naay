@@ -79,6 +79,11 @@
   &-item{
     width: calc(50% - 20px);
     margin: 0 10px 55px;
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
     &__media{
       width: 100%;
       border-radius: 20px;
@@ -87,6 +92,14 @@
       a, img{
         width: 100%;
       }
+      a{
+        overflow: hidden;
+      }
+      img{
+        transition: all ease 300ms;
+        transform: scale(1);
+      }
+
     }
     &__title{
       padding: 0 23px;
