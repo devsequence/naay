@@ -99,3 +99,7 @@ if($('.item-line').length > 0){
  $('.select').select2({
      maximumInputLength: -3 // only allow terms up to 20 characters long
  });
+ Fancybox.bind("[data-fancybox]", {
+     // Your custom options
+ });
+ // gallery-item
