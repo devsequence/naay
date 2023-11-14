@@ -68,7 +68,7 @@ $('.hero-link a').on('click', function (e) {
 if($('.item-line').length > 0){
     $('.item-line__item').each(function (e) {
         var $this = $(this);
-        var thsPos = $this.offset().top - 100;
+        var thsPos = $this.offset().top - 200;
         var thsId = $this.attr('id');
         $(window).on('scroll', function() {
             var $this = $(this);
@@ -99,7 +99,5 @@ if($('.item-line').length > 0){
  $('.select').select2({
      maximumInputLength: -3 // only allow terms up to 20 characters long
  });
- Fancybox.bind("[data-fancybox]", {
-     // Your custom options
- });
+ Fancybox.bind("[data-fancybox]", {});
  // gallery-item

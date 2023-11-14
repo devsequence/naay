@@ -85,11 +85,15 @@
   &-logo{
     display: flex;
     align-items: center;
-    img{
+    a{
+      height: 100%;
       display: inline-block;
       &:first-of-type{
         margin-right: 19px;
       }
+    }
+    img{
+      display: inline-block;
     }
   }
   &-search{
@@ -185,6 +189,8 @@
       top: calc(50% - 2px);
     }
     &.active{
+      position: absolute;
+      right: 390px;
       &:before, &:after, span{
         background: $white;
       }

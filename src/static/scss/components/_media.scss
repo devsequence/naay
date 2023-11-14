@@ -1,3 +1,13 @@
+@media screen and (max-width: 1920px){
+  .header{
+    &-btn{
+      &.active{
+        position: relative;
+        right: 0;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1440px){
   .to-top{
     right: 15px;
@@ -142,6 +152,16 @@
     }
   }
   .header{
+    &-social{
+      position: fixed;
+      z-index: -3;
+      top: 630px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &-search{
+      max-width: 300px;
+    }
     &-nav{
       ul {
         padding: 100px 15px 0;
@@ -163,6 +183,19 @@
         z-index: 5;
         opacity: 1;
         visibility: visible;
+      }
+      .header-social{
+        opacity: 1;
+        visibility: visible;
+        z-index: 3;
+        img{
+          filter: brightness(0) invert(1);
+        }
+        a{
+          &:hover{
+            filter: none;
+          }
+        }
       }
     }
   }
@@ -425,7 +458,8 @@
       }
     }
     &-search{
-      max-width: 129px
+      max-width: 250px;
+      margin: 0 10px;
     }
   }
 }

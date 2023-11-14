@@ -226,6 +226,12 @@
       }
       .item-info__media{
         width: 246px;
+        a{
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
       }
     }
     &__wrap{
@@ -236,6 +242,20 @@
     }
     &__media{
       margin-bottom: 11px;
+      a{
+        overflow: hidden;
+        img{
+          width: 156px;
+          height: 210px;
+          transition: all ease 300ms;
+          transform: scale(1);
+        }
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+      }
     }
     &__title{
       color: $primary;
@@ -573,11 +593,11 @@
   label{
     width: 100%;
     display: block;
-    max-width: 422px;
+    max-width: 355px;
     margin-right: 20px;
   }
   .select2{
-  min-width: 221px;
+    min-width: 300px;
     margin-right: 20px;
   }
   .select2-selection__rendered{
