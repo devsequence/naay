@@ -169,7 +169,10 @@
       a{
         font-size: 16px;
       }
-    }
+      &.active{
+        min-height: 680px;
+      }
+  }
     &-button{
       opacity: 0;
       visibility: hidden;
