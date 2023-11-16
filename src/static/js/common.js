@@ -26,6 +26,28 @@ $('.hero-link a').on('click', function (e) {
      const $ths = $(this);
      $ths.toggleClass('active');
      $ths.next().slideToggle();
+     if($('.item-line__progress').length > 0){
+         $('.item-line__item').each(function (e) {
+             var $this = $(this);
+             var thsPos = $this.offset().top - 200;
+             var thsId = $this.attr('id');
+             $(window).on('scroll', function() {
+                 var $this = $(this);
+                 if ($this.scrollTop() >= thsPos) {
+                     $('#'+ thsId).addClass('active')
+                 }else{
+                     $('#'+ thsId).removeClass('active')
+                 }
+             });
+         });
+         $(window).on('scroll', function() {
+             var $this = $(this);
+             var s = $this.scrollTop(),
+                 c = $('.item-line').height(),
+                 position = ((s / c) * 100) - 10;
+             $(".item-line__progress span").css('height', position + '%');
+         });
+     }
  });
  $('.play-video').on('click', function (e) {
      const $ths = $(this);
