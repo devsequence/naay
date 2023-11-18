@@ -108,6 +108,13 @@
 }
 
 @media screen and (max-width: 768px){
+  .item-line__progress {
+    b.active{
+      margin-left: -11px;
+      width: 22px;
+      height: 22px;
+    }
+  }
   .search-form__page{
     label{
       max-width: 100%;

@@ -355,6 +355,7 @@
         background: #0FD15D;
         border-radius: 50%;
         transition: all ease 300ms;
+        display: none;
       }
       &.active{
         &:before{
