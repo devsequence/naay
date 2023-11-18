@@ -29,14 +29,14 @@ $('.hero-link a').on('click', function (e) {
      if($('.item-line__progress').length > 0){
          $('.item-line__item').each(function (e) {
              var $this = $(this);
-             var thsPos = $this.offset().top - 200;
+             var thsPos = $this.offset().top - 480;
              var thsId = $this.attr('id');
              $(window).on('scroll', function() {
                  var $this = $(this);
                  if ($this.scrollTop() >= thsPos) {
                      $('#'+ thsId).addClass('active')
                  }else{
-                     $('#'+ thsId).removeClass('active')
+                     $('#'+ thsId).removeClass('active');
                  }
              });
          });
@@ -44,8 +44,14 @@ $('.hero-link a').on('click', function (e) {
              var $this = $(this);
              var s = $this.scrollTop(),
                  c = $('.item-line').height(),
-                 position = ((s / c) * 100) - 10;
+                 position = ((s / c) * 100) - 3;
              $(".item-line__progress span").css('height', position + '%');
+
+             if ($this.scrollTop() >= 100) {
+                 $(".item-line__progress b").addClass('active');
+             }else{
+                 $(".item-line__progress b").removeClass('active');
+             }
          });
      }
  });
@@ -90,14 +96,14 @@ $('.hero-link a').on('click', function (e) {
 if($('.item-line').length > 0){
     $('.item-line__item').each(function (e) {
         var $this = $(this);
-        var thsPos = $this.offset().top - 200;
+        var thsPos = $this.offset().top - 480;
         var thsId = $this.attr('id');
         $(window).on('scroll', function() {
             var $this = $(this);
             if ($this.scrollTop() >= thsPos) {
                 $('#'+ thsId).addClass('active')
             }else{
-                $('#'+ thsId).removeClass('active')
+                $('#'+ thsId).removeClass('active');
             }
         });
     });
@@ -105,8 +111,20 @@ if($('.item-line').length > 0){
         var $this = $(this);
         var s = $this.scrollTop(),
             c = $('.item-line').height(),
-            position = ((s / c) * 100) - 10;
+            position = ((s / c) * 100) - 3;
         $(".item-line__progress span").css('height', position + '%');
+        if(position >= 100){
+            $(".item-line__progress b").removeClass('active');
+            $(".item-line__progress span").addClass('end');
+        }else{
+            $(".item-line__progress b").addClass('active');
+            $(".item-line__progress span").removeClass('end');
+        }
+        // if ($this.scrollTop() >= 380) {
+        //     $(".item-line__progress b").addClass('active');
+        // }else{
+        //     $(".item-line__progress b").removeClass('active');
+        // }
     });
 }
  $(window).on('scroll', function() {
