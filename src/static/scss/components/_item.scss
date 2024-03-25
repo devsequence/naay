@@ -343,38 +343,32 @@
     position: relative;
     padding: 45px 0 45px 84px;
     &__item{
-      margin-bottom: 80px;
+      margin-top: -42px;
       position: relative;
       &:before{
-        position: absolute;
+        display: block;
+        position: sticky;
         content: '';
-        left: -73px;
-        top: 0;
+        left: 0;
+        margin-left: -73px;
+        top: 80px;
         width: 22px;
         height: 22px;
         background: #0FD15D;
         border-radius: 50%;
         transition: all ease 300ms;
-        display: none;
       }
       &.active{
         &:before{
-          display: none;
-          left: -83px;
+          margin-left: -83px;
           width: 42px;
           height: 42px;
-          opacity: 0;
         }
       }
-      &:nth-child(2){
-        &:before{
-          display: none;
-        }
-        &.active{
-          &:before{
-            display: none;
-          }
-        }
+    }
+    .item-accordion{
+      &:last-of-type{
+        margin-bottom: 80px;
       }
     }
   }
